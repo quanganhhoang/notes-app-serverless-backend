@@ -1,18 +1,26 @@
 # Serverless Stack Tutorial Notes API
 
 The corresponding Notes App Client is here:
-[https://github.ccs.neu.edu/CS-7680-SEA-Spring2021/QAHoang-Serverless-NotesAppClient](https://github.ccs.neu.edu/CS-7680-SEA-Spring2021/QAHoang-Serverless-NotesAppClient)
+[https://github.com/quanganhhoang/notes-app-frontend](https://github.com/quanganhhoang/notes-app-frontend)
 
-A demo of the completed app can be seen [here]().
+A demo of the completed app can be seen [here](https://dsode8mw8sxg1.cloudfront.net/).
 
 # Checkpoint updates
 
-## Checkpoint 4
+## [Checkpoint 4](submissions/checkpoint4)
 
-- Checkpoint 4 progress screenshot(s)
-- Checkpoint 4 AWS billing info screenshot
-- Checkpoint 4 question answers
-- At least 10 incremental commits in the commit history since checkpoint 3
+- What was done?
+  - Infrastructure as code with AWS CDK and Serverless Stack Toolkit
+  - CI/CD with AWS CodePipeline including AWS CodeBuild
+  - Monitoring and Debugging - techniques to save logs and alert developers for errors happening in prod such as:
+    - Push backend logs to CloudWatch
+    - An `ErrorBoundary` React component as a fallback to catch errors as it happens (and not when app crashes when re-rendering) and saves it with another service (e.g. [Sentry](https://sentry.io/welcome/))
+  - AWS IAM roles/policies
+  - AWS config yaml files for select services
+- A screenshot of the terminal output of running `serverless deploy -v` in the "Deploy Your Serverless Infrastructure" section.
+- A screenshot of the modified deployed app with the "Login" and "Signup" buttons.
+- Link to the final deployed app [here](https://dsode8mw8sxg1.cloudfront.net/)
+- Screenshot of AWS billing dashboard displaying costs so far
 
 ## [Checkpoint 3](submissions/checkpoint3)
 
